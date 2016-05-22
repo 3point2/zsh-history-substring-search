@@ -203,7 +203,7 @@ _history-substring-search-begin() {
     # (k) returns the "keys" (history index numbers) instead of the values
     # (Oa) reverses the order, because (R) returns results reversed.
     #
-    _history_substring_search_matches=(${(kOa)history[(R)(#$HISTORY_SUBSTRING_SEARCH_GLOBBING_FLAGS)*${_history_substring_search_query_escaped}*]})
+    _history_substring_search_matches=(${(kOa)history[(R)(#$HISTORY_SUBSTRING_SEARCH_GLOBBING_FLAGS)${_history_substring_search_query_escaped}*]})
 
     #
     # Define the range of values that $_history_substring_search_match_index
